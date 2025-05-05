@@ -1,35 +1,50 @@
 # fertigteil-2.0-optimization
 
+![Python](https://img.shields.io/badge/Python-3.8-blue.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
 [![Paper DOI](https://img.shields.io/badge/Paper_DOI-10.1007/978--3--031--13249--0_35-blue.svg)](http://dx.doi.org/10.1007/978-3-031-13249-0_35)
-![Python](https://img.shields.io/badge/python-3.8-blue.svg)
 
 This is the code for the matchmaking and environmental impact optimization done
 within the *Fertigteil 2.0 (Precast Concrete Components 2.0)* research project.
 
-# PLEASE NOTE THAT THIS CODE IS MOSTLY OLD AND WILL NOT BE WORKED ON ANYMORE
+The accompanying paper, _Matter as Met: Towards a Computational Workflow for Architectural Design with Reused Concrete Components_
+was published and presented on the _Design Modelling Symposium: Towards Radical Regeneration_ in Berlin, 2022.
 
-Hops Version: 0.16.2
-    - rhinoinside>=0.6.0
-    - ghhops-server>=1.5.5
-    - rhino3dm>=8.17.0
+For a demo please look at the example file provided in the `gh_dev` folder.
+Make sure you follow the complete installation procedure first, also you need
+a working [Gurobi license](https://support.gurobi.com/hc/en-us/articles/12872879801105-How-do-I-retrieve-and-set-up-a-Gurobi-license)
+activated and ready to be used with the gurobipy package.
+
+## PLEASE NOTE THAT THIS CODE IS MOSTLY OLD AND WILL NOT BE WORKED ON ANYMORE!
 
 ## Table of Contents
 
 [General](#general)  
 [Installation & Updates](#installation--updates)  
-[Development](#development)  
-[Credits, Licensing & References](#credits) 
-
+[Credits, Licensing & References](#credits)  
 
 # General
 
 ## Malt
 
-Malt is a collection of Hops components for Rhino Grasshopper.
+This codebase is based on [malt](https://github.com/fstwn/malt). Malt is/was a
+collection of Hops components for Rhino Grasshopper.
+
+**Back when RhinoPython was running on IronPython 2.7 this was a good way to quickly prototype Python 3 code with Rhino, today this is not really the way to go!**
 
 - The Hops components run using a local [ghhops-server](https://github.com/mcneel/compute.rhino3d/tree/master/src/ghhops-server-py).
 - The components are written in Python 3.8 and defined in `componentserver.py`.
 - Rhino functionality is provided using [Rhino.Inside.Cpython](https://github.com/mcneel/rhino.inside-cpython).
+
+## Software Versions
+
+This has been tested and is running under Windows 10 using:
+- Rhino 7.34.23267.11001
+- Grasshopper 1.0.0007
+- Hops 0.16.2
+- [rhinoinside 0.6.0](https://pypi.org/project/rhinoinside/)
+- [ghhops-server 1.5.5](https://pypi.org/project/ghhops_server/)
+- [rhino3dm 8.17.0](https://pypi.org/project/rhino3dm/)
 
 ## About the provided Conda Environment
 
@@ -41,14 +56,7 @@ to run the provided customized `componentserver.py` file.
 If you want to use the provided Hops Components by running the componentserver locally on your machine, you need the following:
 - Windows (unfortunately Hops and Rhino.Inside.Cpython won't work under OSX for now)
 - [Anaconda / Miniconda](https://www.anaconda.com/products/individual)
-- Rhino 7.4 or newer
-- [Hops](https://developer.rhino3d.com/guides/grasshopper/hops-component/) ([Install using Rhino package manager by using the `_PackageManager` command](rhino://package/search?name=hops))
-
-Currently, Malt is being tested to work using the following stack:
-- Rhino 7 SR24 (7.24.22308.15001)
-- Hops 0.15.3
-- ghhops-server 1.5.3
-- rhinoinside 0.6.0
+- [Hops](https://developer.rhino3d.com/guides/compute/hops-component/) (Install using Rhino package manager by using the `_PackageManager` command)
 
 While different Rhino and/or Hops versions *might* work, there is no guarantee
 at the moment as malt is in a very early stage.
@@ -208,7 +216,7 @@ pip install -e .
 ### 6.2 Updating the conda environment
 
 If you need to update your conda environment after the release of a new version
-of the supplied `ddu_ias_research.yml` file, here is how you can do this:
+of the supplied `ft20-opt.yml` file, here is how you can do this:
 
 First, `cd` into *your* `fertigteil-2.0-optimization` repository directory as always, for me that's
 ```
