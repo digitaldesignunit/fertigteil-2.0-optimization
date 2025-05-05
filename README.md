@@ -13,7 +13,7 @@ was published and presented on the _Design Modelling Symposium: Towards Radical 
 For a demo please look at the example file provided in the `gh_dev` folder.
 Make sure you follow the complete installation procedure first, also you need
 a working [Gurobi license](https://support.gurobi.com/hc/en-us/articles/12872879801105-How-do-I-retrieve-and-set-up-a-Gurobi-license)
-activated and ready to be used with the gurobipy package.
+activated and ready to be used with the `gurobipy` package.
 
 ## PLEASE NOTE THAT THIS CODE WILL NOT BE UPDATED ANYMORE!
 
