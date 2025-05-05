@@ -17,6 +17,11 @@ activated and ready to be used with the gurobipy package.
 
 ## PLEASE NOTE THAT THIS CODE IS MOSTLY OLD AND WILL NOT BE WORKED ON ANYMORE!
 
+![Urban-Mining of Components](/resources/readme/ft20_01.jpg)
+![Environmental Impact Informed Matchmaking](/resources/readme/ft20_02.jpg)
+![Assembly of New Demonstrator Structure](/resources/readme/ft20_03.jpg)
+
+
 ## Table of Contents
 
 [General](#general)  
