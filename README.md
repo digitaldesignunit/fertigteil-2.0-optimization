@@ -3,6 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.8-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 [![Paper DOI](https://img.shields.io/badge/Paper_DOI-10.1007/978--3--031--13249--0_35-blue.svg)](http://dx.doi.org/10.1007/978-3-031-13249-0_35)
+[![DOI](https://zenodo.org/badge/966693933.svg)](https://doi.org/10.5281/zenodo.15341961)
 
 This is the code for the matchmaking and environmental impact optimization done
 within the *Fertigteil 2.0 (Precast Concrete Components 2.0)* research project.
